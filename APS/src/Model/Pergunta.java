@@ -14,7 +14,9 @@ import java.util.Map;
  */
 public class Pergunta {
     private String caminhoPergunta;
-    private Map<Integer,String> alternativa = new HashMap<>();
+    private String pergunta;
+    //Criei um map para guardar os pontos junto com o texto da alternativa
+    private Map<Integer,String> alternativas = new HashMap<>();
 
     public String getCaminhoPergunta() {
         return caminhoPergunta;
@@ -24,13 +26,22 @@ public class Pergunta {
         this.caminhoPergunta = caminhoPergunta;
     }
 
-    public Map<Integer, String> getAlternativa() {
-        return alternativa;
+    public Map<Integer, String> getAlternativas() {
+        return alternativas;
     }
 
-    public void setAlternativa(Map<Integer, String> alternativa) {
-        this.alternativa = alternativa;
+    public void setAlternativas(Map<Integer, String> alternativa) {
+        this.alternativas = alternativa;
     }
+
+    public String getPergunta() {
+        return pergunta;
+    }
+
+    public void setPergunta(String pergunta) {
+        this.pergunta = pergunta;
+    }
+    
     
     
 }

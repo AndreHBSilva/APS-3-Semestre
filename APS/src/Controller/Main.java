@@ -26,24 +26,23 @@ public class Main {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Perguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPerguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Perguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPerguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Perguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPerguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Perguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPerguntas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        Perguntas telaPerguntas = new Perguntas();
-        telaPerguntas.setSize(800, 650);
-        telaPerguntas.setVisible(true);
-        telaPerguntas.setLocationRelativeTo(null);
-        telaPerguntas.setResizable(false);
-//        Pergunta pUm = new Pergunta();
-//        Map<Integer, String> alternativaUm = new HashMap<>();
-//        alternativaUm.put(25, "talkei");
-//        pUm.setAlternativa(alternativaUm);
-        String nome = JOptionPane.showInputDialog("Qual seu nome, jogador(a)?\n");
-        JOptionPane.showMessageDialog(null,"Seu nome é: "+nome);
+        TelaInicial tInicial = new TelaInicial();
+        tInicial.setSize(800, 650);
+        tInicial.setVisible(true);
+        tInicial.setLocationRelativeTo(null);
+        tInicial.setResizable(false);
+//        TelaPerguntas telaPerguntas = new TelaPerguntas();
+//        telaPerguntas.setSize(800, 650);
+//        telaPerguntas.setVisible(true);
+//        telaPerguntas.setLocationRelativeTo(null);
+//        telaPerguntas.setResizable(false); 
     }
 }

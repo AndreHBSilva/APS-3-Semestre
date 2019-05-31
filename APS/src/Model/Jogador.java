@@ -5,15 +5,23 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author COMUNIKIME
+ * @author André Hugo
  */
 public class Jogador {
     String nome;
     int idade;
     int pontuacao;
-
+    ArrayList<Integer> alternativasSelecionadas = new ArrayList<>();
+    
+    public Jogador(String nome, int idade){
+        this.nome = nome;
+        this.idade = idade;
+    }
+    
     public String getNome() {
         return nome;
     }
@@ -37,5 +45,15 @@ public class Jogador {
     public void setPontuacao(int pontuacao) {
         this.pontuacao = pontuacao;
     }
+
+    public ArrayList<Integer> getAlternativasSelecionadas() {
+        return alternativasSelecionadas;
+    }
+
+    public void setAlternativasSelecionadas(ArrayList<Integer> alternativasSelecionadas) {
+        this.alternativasSelecionadas = alternativasSelecionadas;
+    }
+    
+    
    
 }

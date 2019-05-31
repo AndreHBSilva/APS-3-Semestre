@@ -5,10 +5,13 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author COMUNIKIME
+ * @author André Hugo
  */
 public class Scoreboard {
+    ArrayList<Jogador> jogadores = new ArrayList<>();
     
 }
